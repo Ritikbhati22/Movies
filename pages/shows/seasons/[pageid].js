@@ -6,7 +6,7 @@ export async function getServerSideProps({ query }) {
   const apiKey = "537a4a8b666eff5ba82510cb7241c3da";
   const res = await fetch(
     // `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`
-    `https://api.themoviedb.org/3/tv/${id}/season/${seasonid}?api_key=537a4a8b666eff5ba82510cb7241c3da&language=en-US`
+    `https://api.themoviedb.org/3/tv/${id}/season/${seasonid}?${apiKey}&language=en-US`
   );
   const data = await res.json();
   if (res.ok) {

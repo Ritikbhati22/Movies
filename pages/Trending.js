@@ -18,7 +18,7 @@ export async function getStaticProps() {
 function webseries({data}) {
     return (
       <div className="min-h-screen bg-slate-800 flex-row-reverse">
-        <Header />
+        <Header key="ritik"/>
         {data.results.map((element) => {
           return (
             <div className="inline-block ml-10 mr-4 pt-5">

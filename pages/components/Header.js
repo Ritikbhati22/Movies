@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Header() {
@@ -8,13 +9,13 @@ function Header() {
       </h1>
       <ul className="inline-flex pt-6 pl-80 text-xl space-x-12 text-slate-400 font-serif font-normal">
         <li>
-          <button><a href="/">Home</a></button>
+          <button><Link href="/">Home</Link></button>
         </li>
         <li>
-          <button><a href="/Trending">Trending</a></button>
+          <button><Link href="/Trending">Trending</Link></button>
         </li>
         <li>
-          <button><a href="/shows">Shows</a></button>
+          <button><Link href="/shows">Shows</Link></button>
         </li>
       </ul>
       <div className="text-right pt-6 border-transparent pl-72  ">
